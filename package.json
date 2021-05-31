@@ -1,0 +1,21 @@
+{
+  "name": "inline-esm-worker",
+  "version": "0.0.1",
+  "description": "A node.js worker_thread that runs once, can load modules and returns stdout",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "nodejs",
+    "worker",
+    "worker_threads",
+    "esm",
+    "inline"
+  ],
+  "author": "Tim Daubenschütz <tim@daubenschuetz.de> (https://timdaub.github.io/)",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "ava": "3.15.0"
+  }
+}
