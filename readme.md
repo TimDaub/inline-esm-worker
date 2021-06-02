@@ -27,6 +27,10 @@ and are hence catchable.
 
 ## changelog
 
+### 0.0.2
+
+- `run(script)` is throwing errors that originate in running `script`.
+
 ### 0.0.1
 
 - Initial release
