@@ -20,6 +20,11 @@ console.log(capturedStdout.toString().trim());
 > hello world
 ```
 
+**notes**:
+
+- any errors thrown within the script input of `run` are propagated to the user
+and are hence catchable.
+
 ## changelog
 
 ### 0.0.1

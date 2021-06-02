@@ -14,3 +14,9 @@ test("if worker can run a script with a json output", async t => {
   const actual = await run(`console.log('${JSON.stringify(msg)}')`);
   t.deepEqual(msg, JSON.parse(actual.toString()));
 });
+
+test("if errors are thrown and caught by the worker", async t => {
+  await t.throwsAsync(
+    async () => await run(`throw new Error("something went wrong")`)
+  );
+});
