@@ -27,6 +27,10 @@ and are hence catchable.
 
 ## changelog
 
+### 0.0.3
+
+- Redirect worker's stdout to runtime of user
+
 ### 0.0.2
 
 - `run(script)` is throwing errors that originate in running `script`.
