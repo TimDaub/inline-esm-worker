@@ -3,6 +3,15 @@ import test from "ava";
 
 import run from "../src/index.mjs";
 
+test("if async functions can be handled", async t => {
+  const fn = `
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  console.log("hello");
+  `;
+  await run(fn);
+  t.pass();
+});
+
 test("if worker can run simple command", async t => {
   const msg = "hello world";
   const actual = await run(`console.log('${msg}')`);

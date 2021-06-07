@@ -21,6 +21,10 @@ export default function run(code) {
       }
     }
 
+    if (buf && buf.length > 0) {
+      console.log(buf.toString());
+    }
+
     resolve(buf);
   });
 }

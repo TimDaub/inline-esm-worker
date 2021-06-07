@@ -16,8 +16,8 @@ import run from "inline-esm-worker";
 
 const script = `console.log("hello world")`;
 const capturedStdout = await run(script);
-console.log(capturedStdout.toString().trim());
 > hello world
+// capturedStdout is a buffer you can use for further evaluation of the script
 ```
 
 **notes**:
