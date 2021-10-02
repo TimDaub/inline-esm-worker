@@ -1,14 +1,16 @@
 //@format
 import { Worker } from "worker_threads";
-import { once } from "events";
 import process from "process";
 
 export default function run(code) {
   return new Promise(async (resolve, reject) => {
-    const worker = new Worker(new URL(`data:text/javascript,${code}`), {
-      stdout: true,
-      execArgv: [...process.execArgv, "--unhandled-rejections=strict"]
-    });
+    const worker = new Worker(
+      new URL(`data:text/javascript,${encodeURIComponent(code)}`),
+      {
+        stdout: true,
+        execArgv: [...process.execArgv, "--unhandled-rejections=strict"],
+      }
+    );
 
     worker.on("error", reject);
 
