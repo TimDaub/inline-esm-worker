@@ -1,6 +1,6 @@
 {
   "name": "inline-esm-worker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A node.js worker_thread that runs once, can load modules and returns stdout",
   "main": "src/index.mjs",
   "scripts": {
