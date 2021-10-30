@@ -27,6 +27,10 @@ and are hence catchable.
 
 ## changelog
 
+### 0.0.4
+
+- URL encode code to prevent syntax errors
+
 ### 0.0.3
 
 - Redirect worker's stdout to runtime of user
